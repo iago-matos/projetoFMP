@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ID=edge">
+    <title>Projeto Aula</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="menu-hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <header>
+        <section class="video-container">
+           <video autoplay muted loop="video-bg">
+            <source src="video/cars.mp4" type="video/mp4">
+           </video>
+           <div class="video-texto">
+            <h1>Welcome to dreams</h1>
+            <p>Descover the new</p>
+            <a href="#products" class="btn">Explore</a>
+           </div>
+        </section>
+    </header>
+
+    
+    <section id="products">
+        
+
+        <div class="produto"  style="background-image: url('img/tras.jpg');">
+            
+
+            <H3>Produto 1</H3> 
+            <P>Design excepcional.</P>
+
+        </div>
+
+        <div class="produto" style="background-image: url('img/CarreraT.jpg');">
+        <h3>Produto 2</h3>
+        <p>Melhores expericias</p> 
+        </div>
+
+        <div class="produto" style="background-image: url('img/roda.jpeg');">
+        <h3>Produto 3</h3>
+        <p>Segunra nas ruas.</p>
+        </div>
+
+    </section>
+        
+        
+    <h1 id="modtext">Modelos</h1>
+   
+    <section id="modelos">
+        
+        
+        <div class="card">
+            <div class="card-image" style="background-image: url('img/classico.jpg');">
+                <div class="card-text">
+                    <div class="card-description">
+                    <h3>911 Sport Classic</h3>
+                    
+                    <p>Redescubra o charme de tempos passados com o 911 Sport Classic.</p>
+                    <p>à partir de EUR 162 500,00</p>
+                    </div>
+                    <a href="#" class="btn-card">Configurar</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-image" style="background-image: url('img/911-carrera.jpg');">
+                <div class="card-text">
+                    <div class="card-description">
+                    <h3>911 Carrera</h3>
+                    
+                    <p>Redescubra o charme de tempos passados com o 911 Sport Classic.</p>
+                    <p>à partir de EUR 131 700,00</p>
+                </div>
+                    <a href="#" class="btn-card">Configurar</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-image" style="background-image: url('img/tycan-turbo.jpg');">
+                <div class="card-text">
+                    <div class="card-description">
+                    <h3>Tycan Gts</h3>
+                    
+                    <p>La sportive deux places au moteur central arrière.</p>
+                    <p>à partir de EUR 162 500,00</p>
+                    </div>
+                    <a href="#" class="btn-card">Configurar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image" style="background-image: url('img/macan-t.jpg');">
+                <div class="card-text">
+                    <div class="card-description">
+                    <h3>Macan Gts</h3>
+                    
+                    <p>La sportive deux places au moteur central arrière.</p>
+                    <p>à partir de EUR 162 500,00</p>
+                    </div>
+                    <a href="#" class="btn-card">Configurar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image" style="background-image: url('img/gts.jpg');">
+                <div class="card-text">
+                    <div class="card-description">
+                    <h3>911 GTS-RS</h3>
+                    
+                    <p>La sportive deux places au moteur central arrière.</p>
+                    <p>à partir de EUR 162 500,00</p>
+                    </div>
+                    <a href="#" class="btn-card">Configurar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image" style="background-image: url('img/tycan-gts.jpg');">
+                <div class="card-text">
+                    <div class="card-description">
+                    <h3>Tycan</h3>
+                    
+                    <p>La sportive deux places au moteur central arrière.</p>
+                    <p>à partir de EUR 162 500,00</p>
+                    </div>
+                    <a href="#" class="btn-card">Configurar</a>
+                </div>
+            </div>
+        </div>
+        
+       
+    </section>
+
+    <Section class="classicos">
+       <div class="classicos-texto">
+        <h1>Galeria</h1>
+            <p>A Porsche sempre representou um sonho. E, claro, não apenas Ferry Porsche sonhava com isso. Muitos sonharam. E por isso dirigem Porsche. Ou gostariam de dirigir um Porsche: as pessoas nas ruas que se viram para ver um Porsche 911 passando. A criança que joga Super Trunfo e só quer aquela carta, com a certeza de que irá ganhar o jogo.  
+            </p>
+            <button>
+                Conhecer história
+            </button>
+
+        </div>
+        <div class="classicos-img">
+            <img src="img/old.png" alt="" width="500px">
+        </div>
+
+
+        
+    </Section>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2024 Projeto FMP. Todos os direitos reservados.</p>
+            <ul class="social-media">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    
+
+    
+ 
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu-hamburger');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
