@@ -270,6 +270,24 @@ body, html {
         width: 100%;
         padding: 0;
     }
+    #modelos {
+        padding: 0;
+        width: 100%;
+    }
+    #modelos .card {
+        width: 100%;
+        padding: 20px;
+    }
+    #modelos .card-image {
+        width: 100%;
+        height: 100%;
+    }
+    #modelos .card-text {
+        gap: 220px;
+    }
+    .classicos .classicos-img img{
+        width: 100%;
+    }
 }
 
 
