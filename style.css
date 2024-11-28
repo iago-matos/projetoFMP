@@ -135,11 +135,19 @@ header {
 
 /*Aqui é para falar sobre o menu do site*/
 
+
+
+/* Menu container */
+.menu-container {
+    position: relative;
+}
+
+/* Ícone do menu hambúrguer */
 .menu-hamburger {
     position: absolute;
-    top: 50px;
-    left: 50px;
-    width: 25px;
+    top: 45px;
+    left: 35px;
+    width: 30px;
     height: 20px;
     display: flex;
     flex-direction: column;
@@ -150,25 +158,70 @@ header {
 
 .menu-hamburger span {
     width: 100%;
-    height: 2px;
-    background-color: #ffffff; /* Cor dos riscos */
-    border-radius: 2px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
     transition: 0.3s;
 }
 
-.menu-hamburger.active span:nth-child(1) {
-    transform: translateY(10px) rotate(45deg);
+/* Menu lateral */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: left 0.3s ease-in-out;
+    padding-top: 60px;
+    z-index: 999;
 }
 
-.menu-hamburger.active span:nth-child(2) {
-    opacity: 0;
+.menu ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.menu-hamburger.active span:nth-child(3) {
-    transform: translateY(-10px) rotate(-45deg);
+.menu ul li {
+    margin: 20px 0;
 }
 
+.menu ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+}
 
+.menu ul li a:hover {
+    background-color: #e4f1f7;
+}
+
+/* Classe para mostrar o menu */
+.menu.show {
+    left: 0;
+}
+
+/* Botão "X" para fechar o menu */
+.menu-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.menu-close:hover {
+    color: #555;
+}
+
+  
 /* Container #modelos para os cards */
 #modelos {
     display: grid;
